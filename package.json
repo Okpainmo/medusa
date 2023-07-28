@@ -68,7 +68,7 @@
   "scripts": {
     "hooks:install": "husky install",
     "hooks:uninstall": "husky uninstall",
-    "build": "turbo run build --no-daemon",
+    "build": "node api.js && turbo run build --no-daemon",
     "lint": "eslint --ignore-path .eslintignore --ext .js,.ts,.tsx .",
     "lint:docs": "eslint -c docs/.eslintrc.js --ignore-path docs/.eslintignore docs/content",
     "prettier": "prettier",
